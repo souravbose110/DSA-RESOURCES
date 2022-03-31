@@ -53,4 +53,10 @@ public:
 	T front() {
 		return head->data;
 	}
+	
+	~Queue() {
+		if (head != NULL) {
+			delete head;
+		}
+	}
 };
